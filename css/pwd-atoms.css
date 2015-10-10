@@ -1,0 +1,3468 @@
+/******************************************************************
+version		=		1.0
+author		=		www.prowebdesign.ro
+
+Atomic helper styles for Twitter Bootstrap. But can be used stand alone too, of course.
+Atomic CSS is a way of writing style sheets with one property per declaration, if to put it simple. If you have coded at least one large, scalable, responsive UI you probably already know how useful this approach is:)
+
+This SCSS will generate:
+-	Set of paddings from 0 to 60. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of margins from 0 to 60. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of 1px solid borders. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of no borders. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of elements with 4 different positions. For base size and 4 breakpoints.
+-	Set of elements with display types inline, inline-block, block, none, table, table-cell, table-row, flex. For base size and 4 breakpoints.  
+-	Set of rounded corner elements, radius from 0 to 24. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of sharp corner elements, radius 0px. For each of 4 sides. For base size and 4 breakpoints.
+
+NAMING CONVENTION
+atm_	=	prefix. To avoid conflicts with other classes. Can be changed or deleted.
+- followed by
+m		=	margin
+p		=	padding
+b		=	border
+nob		=	no borders
+br		=	border radius
+nobr	=	no border radius (stright corner)
+ed		=	element display
+ep		=	element position
+- followed by
+in case of margins, paddings, border radius a number that signifies size of margin, or padding, etc.
+- followed by
+side name. I.e. -left, -right etc.
+- followed by
+nothing or break point name. I.e. -xs, -sm etc.
+
+Example:
+.atm_m10-left-xs class will give an elemet it is applied to left margin of 10 pixels, on screens of maximum 767px width
+******************************************************************/
+/*GENERATE PADDINGS, MARGINS, BORDERS FOR SEVERAL BREAK POINTS. BREAKPOINS CORRESPOND WITH THOSE OF TWITTER BOOTSTRAP. YOU CAN USE YOUR OWN VALUES AND PREFIXES IF YOU LIKE*/
+.atm_m0 {
+  margin: 0px;
+}
+
+.atm_m5 {
+  margin: 5px;
+}
+
+.atm_m10 {
+  margin: 10px;
+}
+
+.atm_m15 {
+  margin: 15px;
+}
+
+.atm_m20 {
+  margin: 20px;
+}
+
+.atm_m25 {
+  margin: 25px;
+}
+
+.atm_m30 {
+  margin: 30px;
+}
+
+.atm_m35 {
+  margin: 35px;
+}
+
+.atm_m40 {
+  margin: 40px;
+}
+
+.atm_m45 {
+  margin: 45px;
+}
+
+.atm_m50 {
+  margin: 50px;
+}
+
+.atm_m55 {
+  margin: 55px;
+}
+
+.atm_m60 {
+  margin: 60px;
+}
+
+.atm_m0-top {
+  margin-top: 0px;
+}
+
+.atm_m5-top {
+  margin-top: 5px;
+}
+
+.atm_m10-top {
+  margin-top: 10px;
+}
+
+.atm_m15-top {
+  margin-top: 15px;
+}
+
+.atm_m20-top {
+  margin-top: 20px;
+}
+
+.atm_m25-top {
+  margin-top: 25px;
+}
+
+.atm_m30-top {
+  margin-top: 30px;
+}
+
+.atm_m35-top {
+  margin-top: 35px;
+}
+
+.atm_m40-top {
+  margin-top: 40px;
+}
+
+.atm_m45-top {
+  margin-top: 45px;
+}
+
+.atm_m50-top {
+  margin-top: 50px;
+}
+
+.atm_m55-top {
+  margin-top: 55px;
+}
+
+.atm_m60-top {
+  margin-top: 60px;
+}
+
+.atm_m0-right {
+  margin-right: 0px;
+}
+
+.atm_m5-right {
+  margin-right: 5px;
+}
+
+.atm_m10-right {
+  margin-right: 10px;
+}
+
+.atm_m15-right {
+  margin-right: 15px;
+}
+
+.atm_m20-right {
+  margin-right: 20px;
+}
+
+.atm_m25-right {
+  margin-right: 25px;
+}
+
+.atm_m30-right {
+  margin-right: 30px;
+}
+
+.atm_m35-right {
+  margin-right: 35px;
+}
+
+.atm_m40-right {
+  margin-right: 40px;
+}
+
+.atm_m45-right {
+  margin-right: 45px;
+}
+
+.atm_m50-right {
+  margin-right: 50px;
+}
+
+.atm_m55-right {
+  margin-right: 55px;
+}
+
+.atm_m60-right {
+  margin-right: 60px;
+}
+
+.atm_m0-bottom {
+  margin-bottom: 0px;
+}
+
+.atm_m5-bottom {
+  margin-bottom: 5px;
+}
+
+.atm_m10-bottom {
+  margin-bottom: 10px;
+}
+
+.atm_m15-bottom {
+  margin-bottom: 15px;
+}
+
+.atm_m20-bottom {
+  margin-bottom: 20px;
+}
+
+.atm_m25-bottom {
+  margin-bottom: 25px;
+}
+
+.atm_m30-bottom {
+  margin-bottom: 30px;
+}
+
+.atm_m35-bottom {
+  margin-bottom: 35px;
+}
+
+.atm_m40-bottom {
+  margin-bottom: 40px;
+}
+
+.atm_m45-bottom {
+  margin-bottom: 45px;
+}
+
+.atm_m50-bottom {
+  margin-bottom: 50px;
+}
+
+.atm_m55-bottom {
+  margin-bottom: 55px;
+}
+
+.atm_m60-bottom {
+  margin-bottom: 60px;
+}
+
+.atm_m0-left {
+  margin-left: 0px;
+}
+
+.atm_m5-left {
+  margin-left: 5px;
+}
+
+.atm_m10-left {
+  margin-left: 10px;
+}
+
+.atm_m15-left {
+  margin-left: 15px;
+}
+
+.atm_m20-left {
+  margin-left: 20px;
+}
+
+.atm_m25-left {
+  margin-left: 25px;
+}
+
+.atm_m30-left {
+  margin-left: 30px;
+}
+
+.atm_m35-left {
+  margin-left: 35px;
+}
+
+.atm_m40-left {
+  margin-left: 40px;
+}
+
+.atm_m45-left {
+  margin-left: 45px;
+}
+
+.atm_m50-left {
+  margin-left: 50px;
+}
+
+.atm_m55-left {
+  margin-left: 55px;
+}
+
+.atm_m60-left {
+  margin-left: 60px;
+}
+
+.atm_p0 {
+  padding: 0px;
+}
+
+.atm_p5 {
+  padding: 5px;
+}
+
+.atm_p10 {
+  padding: 10px;
+}
+
+.atm_p15 {
+  padding: 15px;
+}
+
+.atm_p20 {
+  padding: 20px;
+}
+
+.atm_p25 {
+  padding: 25px;
+}
+
+.atm_p30 {
+  padding: 30px;
+}
+
+.atm_p35 {
+  padding: 35px;
+}
+
+.atm_p40 {
+  padding: 40px;
+}
+
+.atm_p45 {
+  padding: 45px;
+}
+
+.atm_p50 {
+  padding: 50px;
+}
+
+.atm_p55 {
+  padding: 55px;
+}
+
+.atm_p60 {
+  padding: 60px;
+}
+
+.atm_p0-top {
+  padding-top: 0px;
+}
+
+.atm_p5-top {
+  padding-top: 5px;
+}
+
+.atm_p10-top {
+  padding-top: 10px;
+}
+
+.atm_p15-top {
+  padding-top: 15px;
+}
+
+.atm_p20-top {
+  padding-top: 20px;
+}
+
+.atm_p25-top {
+  padding-top: 25px;
+}
+
+.atm_p30-top {
+  padding-top: 30px;
+}
+
+.atm_p35-top {
+  padding-top: 35px;
+}
+
+.atm_p40-top {
+  padding-top: 40px;
+}
+
+.atm_p45-top {
+  padding-top: 45px;
+}
+
+.atm_p50-top {
+  padding-top: 50px;
+}
+
+.atm_p55-top {
+  padding-top: 55px;
+}
+
+.atm_p60-top {
+  padding-top: 60px;
+}
+
+.atm_p0-right {
+  padding-right: 0px;
+}
+
+.atm_p5-right {
+  padding-right: 5px;
+}
+
+.atm_p10-right {
+  padding-right: 10px;
+}
+
+.atm_p15-right {
+  padding-right: 15px;
+}
+
+.atm_p20-right {
+  padding-right: 20px;
+}
+
+.atm_p25-right {
+  padding-right: 25px;
+}
+
+.atm_p30-right {
+  padding-right: 30px;
+}
+
+.atm_p35-right {
+  padding-right: 35px;
+}
+
+.atm_p40-right {
+  padding-right: 40px;
+}
+
+.atm_p45-right {
+  padding-right: 45px;
+}
+
+.atm_p50-right {
+  padding-right: 50px;
+}
+
+.atm_p55-right {
+  padding-right: 55px;
+}
+
+.atm_p60-right {
+  padding-right: 60px;
+}
+
+.atm_p0-bottom {
+  padding-bottom: 0px;
+}
+
+.atm_p5-bottom {
+  padding-bottom: 5px;
+}
+
+.atm_p10-bottom {
+  padding-bottom: 10px;
+}
+
+.atm_p15-bottom {
+  padding-bottom: 15px;
+}
+
+.atm_p20-bottom {
+  padding-bottom: 20px;
+}
+
+.atm_p25-bottom {
+  padding-bottom: 25px;
+}
+
+.atm_p30-bottom {
+  padding-bottom: 30px;
+}
+
+.atm_p35-bottom {
+  padding-bottom: 35px;
+}
+
+.atm_p40-bottom {
+  padding-bottom: 40px;
+}
+
+.atm_p45-bottom {
+  padding-bottom: 45px;
+}
+
+.atm_p50-bottom {
+  padding-bottom: 50px;
+}
+
+.atm_p55-bottom {
+  padding-bottom: 55px;
+}
+
+.atm_p60-bottom {
+  padding-bottom: 60px;
+}
+
+.atm_p0-left {
+  padding-left: 0px;
+}
+
+.atm_p5-left {
+  padding-left: 5px;
+}
+
+.atm_p10-left {
+  padding-left: 10px;
+}
+
+.atm_p15-left {
+  padding-left: 15px;
+}
+
+.atm_p20-left {
+  padding-left: 20px;
+}
+
+.atm_p25-left {
+  padding-left: 25px;
+}
+
+.atm_p30-left {
+  padding-left: 30px;
+}
+
+.atm_p35-left {
+  padding-left: 35px;
+}
+
+.atm_p40-left {
+  padding-left: 40px;
+}
+
+.atm_p45-left {
+  padding-left: 45px;
+}
+
+.atm_p50-left {
+  padding-left: 50px;
+}
+
+.atm_p55-left {
+  padding-left: 55px;
+}
+
+.atm_p60-left {
+  padding-left: 60px;
+}
+
+.atm_b {
+  border: 1px solid #ddd;
+}
+
+.atm_b-top {
+  border-top: 1px solid #ddd;
+}
+
+.atm_b-right {
+  border-right: 1px solid #ddd;
+}
+
+.atm_b-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.atm_b-left {
+  border-left: 1px solid #ddd;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_m0-xs {
+    margin: 0px;
+  }
+
+  .atm_m5-xs {
+    margin: 5px;
+  }
+
+  .atm_m10-xs {
+    margin: 10px;
+  }
+
+  .atm_m15-xs {
+    margin: 15px;
+  }
+
+  .atm_m20-xs {
+    margin: 20px;
+  }
+
+  .atm_m25-xs {
+    margin: 25px;
+  }
+
+  .atm_m30-xs {
+    margin: 30px;
+  }
+
+  .atm_m35-xs {
+    margin: 35px;
+  }
+
+  .atm_m40-xs {
+    margin: 40px;
+  }
+
+  .atm_m45-xs {
+    margin: 45px;
+  }
+
+  .atm_m50-xs {
+    margin: 50px;
+  }
+
+  .atm_m55-xs {
+    margin: 55px;
+  }
+
+  .atm_m60-xs {
+    margin: 60px;
+  }
+
+  .atm_m0-top-xs {
+    margin-top: 0px;
+  }
+
+  .atm_m5-top-xs {
+    margin-top: 5px;
+  }
+
+  .atm_m10-top-xs {
+    margin-top: 10px;
+  }
+
+  .atm_m15-top-xs {
+    margin-top: 15px;
+  }
+
+  .atm_m20-top-xs {
+    margin-top: 20px;
+  }
+
+  .atm_m25-top-xs {
+    margin-top: 25px;
+  }
+
+  .atm_m30-top-xs {
+    margin-top: 30px;
+  }
+
+  .atm_m35-top-xs {
+    margin-top: 35px;
+  }
+
+  .atm_m40-top-xs {
+    margin-top: 40px;
+  }
+
+  .atm_m45-top-xs {
+    margin-top: 45px;
+  }
+
+  .atm_m50-top-xs {
+    margin-top: 50px;
+  }
+
+  .atm_m55-top-xs {
+    margin-top: 55px;
+  }
+
+  .atm_m60-top-xs {
+    margin-top: 60px;
+  }
+
+  .atm_m0-right-xs {
+    margin-right: 0px;
+  }
+
+  .atm_m5-right-xs {
+    margin-right: 5px;
+  }
+
+  .atm_m10-right-xs {
+    margin-right: 10px;
+  }
+
+  .atm_m15-right-xs {
+    margin-right: 15px;
+  }
+
+  .atm_m20-right-xs {
+    margin-right: 20px;
+  }
+
+  .atm_m25-right-xs {
+    margin-right: 25px;
+  }
+
+  .atm_m30-right-xs {
+    margin-right: 30px;
+  }
+
+  .atm_m35-right-xs {
+    margin-right: 35px;
+  }
+
+  .atm_m40-right-xs {
+    margin-right: 40px;
+  }
+
+  .atm_m45-right-xs {
+    margin-right: 45px;
+  }
+
+  .atm_m50-right-xs {
+    margin-right: 50px;
+  }
+
+  .atm_m55-right-xs {
+    margin-right: 55px;
+  }
+
+  .atm_m60-right-xs {
+    margin-right: 60px;
+  }
+
+  .atm_m0-bottom-xs {
+    margin-bottom: 0px;
+  }
+
+  .atm_m5-bottom-xs {
+    margin-bottom: 5px;
+  }
+
+  .atm_m10-bottom-xs {
+    margin-bottom: 10px;
+  }
+
+  .atm_m15-bottom-xs {
+    margin-bottom: 15px;
+  }
+
+  .atm_m20-bottom-xs {
+    margin-bottom: 20px;
+  }
+
+  .atm_m25-bottom-xs {
+    margin-bottom: 25px;
+  }
+
+  .atm_m30-bottom-xs {
+    margin-bottom: 30px;
+  }
+
+  .atm_m35-bottom-xs {
+    margin-bottom: 35px;
+  }
+
+  .atm_m40-bottom-xs {
+    margin-bottom: 40px;
+  }
+
+  .atm_m45-bottom-xs {
+    margin-bottom: 45px;
+  }
+
+  .atm_m50-bottom-xs {
+    margin-bottom: 50px;
+  }
+
+  .atm_m55-bottom-xs {
+    margin-bottom: 55px;
+  }
+
+  .atm_m60-bottom-xs {
+    margin-bottom: 60px;
+  }
+
+  .atm_m0-left-xs {
+    margin-left: 0px;
+  }
+
+  .atm_m5-left-xs {
+    margin-left: 5px;
+  }
+
+  .atm_m10-left-xs {
+    margin-left: 10px;
+  }
+
+  .atm_m15-left-xs {
+    margin-left: 15px;
+  }
+
+  .atm_m20-left-xs {
+    margin-left: 20px;
+  }
+
+  .atm_m25-left-xs {
+    margin-left: 25px;
+  }
+
+  .atm_m30-left-xs {
+    margin-left: 30px;
+  }
+
+  .atm_m35-left-xs {
+    margin-left: 35px;
+  }
+
+  .atm_m40-left-xs {
+    margin-left: 40px;
+  }
+
+  .atm_m45-left-xs {
+    margin-left: 45px;
+  }
+
+  .atm_m50-left-xs {
+    margin-left: 50px;
+  }
+
+  .atm_m55-left-xs {
+    margin-left: 55px;
+  }
+
+  .atm_m60-left-xs {
+    margin-left: 60px;
+  }
+
+  .atm_p0-xs {
+    padding: 0px;
+  }
+
+  .atm_p5-xs {
+    padding: 5px;
+  }
+
+  .atm_p10-xs {
+    padding: 10px;
+  }
+
+  .atm_p15-xs {
+    padding: 15px;
+  }
+
+  .atm_p20-xs {
+    padding: 20px;
+  }
+
+  .atm_p25-xs {
+    padding: 25px;
+  }
+
+  .atm_p30-xs {
+    padding: 30px;
+  }
+
+  .atm_p35-xs {
+    padding: 35px;
+  }
+
+  .atm_p40-xs {
+    padding: 40px;
+  }
+
+  .atm_p45-xs {
+    padding: 45px;
+  }
+
+  .atm_p50-xs {
+    padding: 50px;
+  }
+
+  .atm_p55-xs {
+    padding: 55px;
+  }
+
+  .atm_p60-xs {
+    padding: 60px;
+  }
+
+  .atm_p0-top-xs {
+    padding-top: 0px;
+  }
+
+  .atm_p5-top-xs {
+    padding-top: 5px;
+  }
+
+  .atm_p10-top-xs {
+    padding-top: 10px;
+  }
+
+  .atm_p15-top-xs {
+    padding-top: 15px;
+  }
+
+  .atm_p20-top-xs {
+    padding-top: 20px;
+  }
+
+  .atm_p25-top-xs {
+    padding-top: 25px;
+  }
+
+  .atm_p30-top-xs {
+    padding-top: 30px;
+  }
+
+  .atm_p35-top-xs {
+    padding-top: 35px;
+  }
+
+  .atm_p40-top-xs {
+    padding-top: 40px;
+  }
+
+  .atm_p45-top-xs {
+    padding-top: 45px;
+  }
+
+  .atm_p50-top-xs {
+    padding-top: 50px;
+  }
+
+  .atm_p55-top-xs {
+    padding-top: 55px;
+  }
+
+  .atm_p60-top-xs {
+    padding-top: 60px;
+  }
+
+  .atm_p0-right-xs {
+    padding-right: 0px;
+  }
+
+  .atm_p5-right-xs {
+    padding-right: 5px;
+  }
+
+  .atm_p10-right-xs {
+    padding-right: 10px;
+  }
+
+  .atm_p15-right-xs {
+    padding-right: 15px;
+  }
+
+  .atm_p20-right-xs {
+    padding-right: 20px;
+  }
+
+  .atm_p25-right-xs {
+    padding-right: 25px;
+  }
+
+  .atm_p30-right-xs {
+    padding-right: 30px;
+  }
+
+  .atm_p35-right-xs {
+    padding-right: 35px;
+  }
+
+  .atm_p40-right-xs {
+    padding-right: 40px;
+  }
+
+  .atm_p45-right-xs {
+    padding-right: 45px;
+  }
+
+  .atm_p50-right-xs {
+    padding-right: 50px;
+  }
+
+  .atm_p55-right-xs {
+    padding-right: 55px;
+  }
+
+  .atm_p60-right-xs {
+    padding-right: 60px;
+  }
+
+  .atm_p0-bottom-xs {
+    padding-bottom: 0px;
+  }
+
+  .atm_p5-bottom-xs {
+    padding-bottom: 5px;
+  }
+
+  .atm_p10-bottom-xs {
+    padding-bottom: 10px;
+  }
+
+  .atm_p15-bottom-xs {
+    padding-bottom: 15px;
+  }
+
+  .atm_p20-bottom-xs {
+    padding-bottom: 20px;
+  }
+
+  .atm_p25-bottom-xs {
+    padding-bottom: 25px;
+  }
+
+  .atm_p30-bottom-xs {
+    padding-bottom: 30px;
+  }
+
+  .atm_p35-bottom-xs {
+    padding-bottom: 35px;
+  }
+
+  .atm_p40-bottom-xs {
+    padding-bottom: 40px;
+  }
+
+  .atm_p45-bottom-xs {
+    padding-bottom: 45px;
+  }
+
+  .atm_p50-bottom-xs {
+    padding-bottom: 50px;
+  }
+
+  .atm_p55-bottom-xs {
+    padding-bottom: 55px;
+  }
+
+  .atm_p60-bottom-xs {
+    padding-bottom: 60px;
+  }
+
+  .atm_p0-left-xs {
+    padding-left: 0px;
+  }
+
+  .atm_p5-left-xs {
+    padding-left: 5px;
+  }
+
+  .atm_p10-left-xs {
+    padding-left: 10px;
+  }
+
+  .atm_p15-left-xs {
+    padding-left: 15px;
+  }
+
+  .atm_p20-left-xs {
+    padding-left: 20px;
+  }
+
+  .atm_p25-left-xs {
+    padding-left: 25px;
+  }
+
+  .atm_p30-left-xs {
+    padding-left: 30px;
+  }
+
+  .atm_p35-left-xs {
+    padding-left: 35px;
+  }
+
+  .atm_p40-left-xs {
+    padding-left: 40px;
+  }
+
+  .atm_p45-left-xs {
+    padding-left: 45px;
+  }
+
+  .atm_p50-left-xs {
+    padding-left: 50px;
+  }
+
+  .atm_p55-left-xs {
+    padding-left: 55px;
+  }
+
+  .atm_p60-left-xs {
+    padding-left: 60px;
+  }
+
+  .atm_b-xs {
+    border: 1px solid #ddd;
+  }
+
+  .atm_b-top-xs {
+    border-top: 1px solid #ddd;
+  }
+
+  .atm_b-right-xs {
+    border-right: 1px solid #ddd;
+  }
+
+  .atm_b-bottom-xs {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .atm_b-left-xs {
+    border-left: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_m0-sm {
+    margin: 0px;
+  }
+
+  .atm_m5-sm {
+    margin: 5px;
+  }
+
+  .atm_m10-sm {
+    margin: 10px;
+  }
+
+  .atm_m15-sm {
+    margin: 15px;
+  }
+
+  .atm_m20-sm {
+    margin: 20px;
+  }
+
+  .atm_m25-sm {
+    margin: 25px;
+  }
+
+  .atm_m30-sm {
+    margin: 30px;
+  }
+
+  .atm_m35-sm {
+    margin: 35px;
+  }
+
+  .atm_m40-sm {
+    margin: 40px;
+  }
+
+  .atm_m45-sm {
+    margin: 45px;
+  }
+
+  .atm_m50-sm {
+    margin: 50px;
+  }
+
+  .atm_m55-sm {
+    margin: 55px;
+  }
+
+  .atm_m60-sm {
+    margin: 60px;
+  }
+
+  .atm_m0-top-sm {
+    margin-top: 0px;
+  }
+
+  .atm_m5-top-sm {
+    margin-top: 5px;
+  }
+
+  .atm_m10-top-sm {
+    margin-top: 10px;
+  }
+
+  .atm_m15-top-sm {
+    margin-top: 15px;
+  }
+
+  .atm_m20-top-sm {
+    margin-top: 20px;
+  }
+
+  .atm_m25-top-sm {
+    margin-top: 25px;
+  }
+
+  .atm_m30-top-sm {
+    margin-top: 30px;
+  }
+
+  .atm_m35-top-sm {
+    margin-top: 35px;
+  }
+
+  .atm_m40-top-sm {
+    margin-top: 40px;
+  }
+
+  .atm_m45-top-sm {
+    margin-top: 45px;
+  }
+
+  .atm_m50-top-sm {
+    margin-top: 50px;
+  }
+
+  .atm_m55-top-sm {
+    margin-top: 55px;
+  }
+
+  .atm_m60-top-sm {
+    margin-top: 60px;
+  }
+
+  .atm_m0-right-sm {
+    margin-right: 0px;
+  }
+
+  .atm_m5-right-sm {
+    margin-right: 5px;
+  }
+
+  .atm_m10-right-sm {
+    margin-right: 10px;
+  }
+
+  .atm_m15-right-sm {
+    margin-right: 15px;
+  }
+
+  .atm_m20-right-sm {
+    margin-right: 20px;
+  }
+
+  .atm_m25-right-sm {
+    margin-right: 25px;
+  }
+
+  .atm_m30-right-sm {
+    margin-right: 30px;
+  }
+
+  .atm_m35-right-sm {
+    margin-right: 35px;
+  }
+
+  .atm_m40-right-sm {
+    margin-right: 40px;
+  }
+
+  .atm_m45-right-sm {
+    margin-right: 45px;
+  }
+
+  .atm_m50-right-sm {
+    margin-right: 50px;
+  }
+
+  .atm_m55-right-sm {
+    margin-right: 55px;
+  }
+
+  .atm_m60-right-sm {
+    margin-right: 60px;
+  }
+
+  .atm_m0-bottom-sm {
+    margin-bottom: 0px;
+  }
+
+  .atm_m5-bottom-sm {
+    margin-bottom: 5px;
+  }
+
+  .atm_m10-bottom-sm {
+    margin-bottom: 10px;
+  }
+
+  .atm_m15-bottom-sm {
+    margin-bottom: 15px;
+  }
+
+  .atm_m20-bottom-sm {
+    margin-bottom: 20px;
+  }
+
+  .atm_m25-bottom-sm {
+    margin-bottom: 25px;
+  }
+
+  .atm_m30-bottom-sm {
+    margin-bottom: 30px;
+  }
+
+  .atm_m35-bottom-sm {
+    margin-bottom: 35px;
+  }
+
+  .atm_m40-bottom-sm {
+    margin-bottom: 40px;
+  }
+
+  .atm_m45-bottom-sm {
+    margin-bottom: 45px;
+  }
+
+  .atm_m50-bottom-sm {
+    margin-bottom: 50px;
+  }
+
+  .atm_m55-bottom-sm {
+    margin-bottom: 55px;
+  }
+
+  .atm_m60-bottom-sm {
+    margin-bottom: 60px;
+  }
+
+  .atm_m0-left-sm {
+    margin-left: 0px;
+  }
+
+  .atm_m5-left-sm {
+    margin-left: 5px;
+  }
+
+  .atm_m10-left-sm {
+    margin-left: 10px;
+  }
+
+  .atm_m15-left-sm {
+    margin-left: 15px;
+  }
+
+  .atm_m20-left-sm {
+    margin-left: 20px;
+  }
+
+  .atm_m25-left-sm {
+    margin-left: 25px;
+  }
+
+  .atm_m30-left-sm {
+    margin-left: 30px;
+  }
+
+  .atm_m35-left-sm {
+    margin-left: 35px;
+  }
+
+  .atm_m40-left-sm {
+    margin-left: 40px;
+  }
+
+  .atm_m45-left-sm {
+    margin-left: 45px;
+  }
+
+  .atm_m50-left-sm {
+    margin-left: 50px;
+  }
+
+  .atm_m55-left-sm {
+    margin-left: 55px;
+  }
+
+  .atm_m60-left-sm {
+    margin-left: 60px;
+  }
+
+  .atm_p0-sm {
+    padding: 0px;
+  }
+
+  .atm_p5-sm {
+    padding: 5px;
+  }
+
+  .atm_p10-sm {
+    padding: 10px;
+  }
+
+  .atm_p15-sm {
+    padding: 15px;
+  }
+
+  .atm_p20-sm {
+    padding: 20px;
+  }
+
+  .atm_p25-sm {
+    padding: 25px;
+  }
+
+  .atm_p30-sm {
+    padding: 30px;
+  }
+
+  .atm_p35-sm {
+    padding: 35px;
+  }
+
+  .atm_p40-sm {
+    padding: 40px;
+  }
+
+  .atm_p45-sm {
+    padding: 45px;
+  }
+
+  .atm_p50-sm {
+    padding: 50px;
+  }
+
+  .atm_p55-sm {
+    padding: 55px;
+  }
+
+  .atm_p60-sm {
+    padding: 60px;
+  }
+
+  .atm_p0-top-sm {
+    padding-top: 0px;
+  }
+
+  .atm_p5-top-sm {
+    padding-top: 5px;
+  }
+
+  .atm_p10-top-sm {
+    padding-top: 10px;
+  }
+
+  .atm_p15-top-sm {
+    padding-top: 15px;
+  }
+
+  .atm_p20-top-sm {
+    padding-top: 20px;
+  }
+
+  .atm_p25-top-sm {
+    padding-top: 25px;
+  }
+
+  .atm_p30-top-sm {
+    padding-top: 30px;
+  }
+
+  .atm_p35-top-sm {
+    padding-top: 35px;
+  }
+
+  .atm_p40-top-sm {
+    padding-top: 40px;
+  }
+
+  .atm_p45-top-sm {
+    padding-top: 45px;
+  }
+
+  .atm_p50-top-sm {
+    padding-top: 50px;
+  }
+
+  .atm_p55-top-sm {
+    padding-top: 55px;
+  }
+
+  .atm_p60-top-sm {
+    padding-top: 60px;
+  }
+
+  .atm_p0-right-sm {
+    padding-right: 0px;
+  }
+
+  .atm_p5-right-sm {
+    padding-right: 5px;
+  }
+
+  .atm_p10-right-sm {
+    padding-right: 10px;
+  }
+
+  .atm_p15-right-sm {
+    padding-right: 15px;
+  }
+
+  .atm_p20-right-sm {
+    padding-right: 20px;
+  }
+
+  .atm_p25-right-sm {
+    padding-right: 25px;
+  }
+
+  .atm_p30-right-sm {
+    padding-right: 30px;
+  }
+
+  .atm_p35-right-sm {
+    padding-right: 35px;
+  }
+
+  .atm_p40-right-sm {
+    padding-right: 40px;
+  }
+
+  .atm_p45-right-sm {
+    padding-right: 45px;
+  }
+
+  .atm_p50-right-sm {
+    padding-right: 50px;
+  }
+
+  .atm_p55-right-sm {
+    padding-right: 55px;
+  }
+
+  .atm_p60-right-sm {
+    padding-right: 60px;
+  }
+
+  .atm_p0-bottom-sm {
+    padding-bottom: 0px;
+  }
+
+  .atm_p5-bottom-sm {
+    padding-bottom: 5px;
+  }
+
+  .atm_p10-bottom-sm {
+    padding-bottom: 10px;
+  }
+
+  .atm_p15-bottom-sm {
+    padding-bottom: 15px;
+  }
+
+  .atm_p20-bottom-sm {
+    padding-bottom: 20px;
+  }
+
+  .atm_p25-bottom-sm {
+    padding-bottom: 25px;
+  }
+
+  .atm_p30-bottom-sm {
+    padding-bottom: 30px;
+  }
+
+  .atm_p35-bottom-sm {
+    padding-bottom: 35px;
+  }
+
+  .atm_p40-bottom-sm {
+    padding-bottom: 40px;
+  }
+
+  .atm_p45-bottom-sm {
+    padding-bottom: 45px;
+  }
+
+  .atm_p50-bottom-sm {
+    padding-bottom: 50px;
+  }
+
+  .atm_p55-bottom-sm {
+    padding-bottom: 55px;
+  }
+
+  .atm_p60-bottom-sm {
+    padding-bottom: 60px;
+  }
+
+  .atm_p0-left-sm {
+    padding-left: 0px;
+  }
+
+  .atm_p5-left-sm {
+    padding-left: 5px;
+  }
+
+  .atm_p10-left-sm {
+    padding-left: 10px;
+  }
+
+  .atm_p15-left-sm {
+    padding-left: 15px;
+  }
+
+  .atm_p20-left-sm {
+    padding-left: 20px;
+  }
+
+  .atm_p25-left-sm {
+    padding-left: 25px;
+  }
+
+  .atm_p30-left-sm {
+    padding-left: 30px;
+  }
+
+  .atm_p35-left-sm {
+    padding-left: 35px;
+  }
+
+  .atm_p40-left-sm {
+    padding-left: 40px;
+  }
+
+  .atm_p45-left-sm {
+    padding-left: 45px;
+  }
+
+  .atm_p50-left-sm {
+    padding-left: 50px;
+  }
+
+  .atm_p55-left-sm {
+    padding-left: 55px;
+  }
+
+  .atm_p60-left-sm {
+    padding-left: 60px;
+  }
+
+  .atm_b-sm {
+    border: 1px solid #ddd;
+  }
+
+  .atm_b-top-sm {
+    border-top: 1px solid #ddd;
+  }
+
+  .atm_b-right-sm {
+    border-right: 1px solid #ddd;
+  }
+
+  .atm_b-bottom-sm {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .atm_b-left-sm {
+    border-left: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_m0-md {
+    margin: 0px;
+  }
+
+  .atm_m5-md {
+    margin: 5px;
+  }
+
+  .atm_m10-md {
+    margin: 10px;
+  }
+
+  .atm_m15-md {
+    margin: 15px;
+  }
+
+  .atm_m20-md {
+    margin: 20px;
+  }
+
+  .atm_m25-md {
+    margin: 25px;
+  }
+
+  .atm_m30-md {
+    margin: 30px;
+  }
+
+  .atm_m35-md {
+    margin: 35px;
+  }
+
+  .atm_m40-md {
+    margin: 40px;
+  }
+
+  .atm_m45-md {
+    margin: 45px;
+  }
+
+  .atm_m50-md {
+    margin: 50px;
+  }
+
+  .atm_m55-md {
+    margin: 55px;
+  }
+
+  .atm_m60-md {
+    margin: 60px;
+  }
+
+  .atm_m0-top-md {
+    margin-top: 0px;
+  }
+
+  .atm_m5-top-md {
+    margin-top: 5px;
+  }
+
+  .atm_m10-top-md {
+    margin-top: 10px;
+  }
+
+  .atm_m15-top-md {
+    margin-top: 15px;
+  }
+
+  .atm_m20-top-md {
+    margin-top: 20px;
+  }
+
+  .atm_m25-top-md {
+    margin-top: 25px;
+  }
+
+  .atm_m30-top-md {
+    margin-top: 30px;
+  }
+
+  .atm_m35-top-md {
+    margin-top: 35px;
+  }
+
+  .atm_m40-top-md {
+    margin-top: 40px;
+  }
+
+  .atm_m45-top-md {
+    margin-top: 45px;
+  }
+
+  .atm_m50-top-md {
+    margin-top: 50px;
+  }
+
+  .atm_m55-top-md {
+    margin-top: 55px;
+  }
+
+  .atm_m60-top-md {
+    margin-top: 60px;
+  }
+
+  .atm_m0-right-md {
+    margin-right: 0px;
+  }
+
+  .atm_m5-right-md {
+    margin-right: 5px;
+  }
+
+  .atm_m10-right-md {
+    margin-right: 10px;
+  }
+
+  .atm_m15-right-md {
+    margin-right: 15px;
+  }
+
+  .atm_m20-right-md {
+    margin-right: 20px;
+  }
+
+  .atm_m25-right-md {
+    margin-right: 25px;
+  }
+
+  .atm_m30-right-md {
+    margin-right: 30px;
+  }
+
+  .atm_m35-right-md {
+    margin-right: 35px;
+  }
+
+  .atm_m40-right-md {
+    margin-right: 40px;
+  }
+
+  .atm_m45-right-md {
+    margin-right: 45px;
+  }
+
+  .atm_m50-right-md {
+    margin-right: 50px;
+  }
+
+  .atm_m55-right-md {
+    margin-right: 55px;
+  }
+
+  .atm_m60-right-md {
+    margin-right: 60px;
+  }
+
+  .atm_m0-bottom-md {
+    margin-bottom: 0px;
+  }
+
+  .atm_m5-bottom-md {
+    margin-bottom: 5px;
+  }
+
+  .atm_m10-bottom-md {
+    margin-bottom: 10px;
+  }
+
+  .atm_m15-bottom-md {
+    margin-bottom: 15px;
+  }
+
+  .atm_m20-bottom-md {
+    margin-bottom: 20px;
+  }
+
+  .atm_m25-bottom-md {
+    margin-bottom: 25px;
+  }
+
+  .atm_m30-bottom-md {
+    margin-bottom: 30px;
+  }
+
+  .atm_m35-bottom-md {
+    margin-bottom: 35px;
+  }
+
+  .atm_m40-bottom-md {
+    margin-bottom: 40px;
+  }
+
+  .atm_m45-bottom-md {
+    margin-bottom: 45px;
+  }
+
+  .atm_m50-bottom-md {
+    margin-bottom: 50px;
+  }
+
+  .atm_m55-bottom-md {
+    margin-bottom: 55px;
+  }
+
+  .atm_m60-bottom-md {
+    margin-bottom: 60px;
+  }
+
+  .atm_m0-left-md {
+    margin-left: 0px;
+  }
+
+  .atm_m5-left-md {
+    margin-left: 5px;
+  }
+
+  .atm_m10-left-md {
+    margin-left: 10px;
+  }
+
+  .atm_m15-left-md {
+    margin-left: 15px;
+  }
+
+  .atm_m20-left-md {
+    margin-left: 20px;
+  }
+
+  .atm_m25-left-md {
+    margin-left: 25px;
+  }
+
+  .atm_m30-left-md {
+    margin-left: 30px;
+  }
+
+  .atm_m35-left-md {
+    margin-left: 35px;
+  }
+
+  .atm_m40-left-md {
+    margin-left: 40px;
+  }
+
+  .atm_m45-left-md {
+    margin-left: 45px;
+  }
+
+  .atm_m50-left-md {
+    margin-left: 50px;
+  }
+
+  .atm_m55-left-md {
+    margin-left: 55px;
+  }
+
+  .atm_m60-left-md {
+    margin-left: 60px;
+  }
+
+  .atm_p0-md {
+    padding: 0px;
+  }
+
+  .atm_p5-md {
+    padding: 5px;
+  }
+
+  .atm_p10-md {
+    padding: 10px;
+  }
+
+  .atm_p15-md {
+    padding: 15px;
+  }
+
+  .atm_p20-md {
+    padding: 20px;
+  }
+
+  .atm_p25-md {
+    padding: 25px;
+  }
+
+  .atm_p30-md {
+    padding: 30px;
+  }
+
+  .atm_p35-md {
+    padding: 35px;
+  }
+
+  .atm_p40-md {
+    padding: 40px;
+  }
+
+  .atm_p45-md {
+    padding: 45px;
+  }
+
+  .atm_p50-md {
+    padding: 50px;
+  }
+
+  .atm_p55-md {
+    padding: 55px;
+  }
+
+  .atm_p60-md {
+    padding: 60px;
+  }
+
+  .atm_p0-top-md {
+    padding-top: 0px;
+  }
+
+  .atm_p5-top-md {
+    padding-top: 5px;
+  }
+
+  .atm_p10-top-md {
+    padding-top: 10px;
+  }
+
+  .atm_p15-top-md {
+    padding-top: 15px;
+  }
+
+  .atm_p20-top-md {
+    padding-top: 20px;
+  }
+
+  .atm_p25-top-md {
+    padding-top: 25px;
+  }
+
+  .atm_p30-top-md {
+    padding-top: 30px;
+  }
+
+  .atm_p35-top-md {
+    padding-top: 35px;
+  }
+
+  .atm_p40-top-md {
+    padding-top: 40px;
+  }
+
+  .atm_p45-top-md {
+    padding-top: 45px;
+  }
+
+  .atm_p50-top-md {
+    padding-top: 50px;
+  }
+
+  .atm_p55-top-md {
+    padding-top: 55px;
+  }
+
+  .atm_p60-top-md {
+    padding-top: 60px;
+  }
+
+  .atm_p0-right-md {
+    padding-right: 0px;
+  }
+
+  .atm_p5-right-md {
+    padding-right: 5px;
+  }
+
+  .atm_p10-right-md {
+    padding-right: 10px;
+  }
+
+  .atm_p15-right-md {
+    padding-right: 15px;
+  }
+
+  .atm_p20-right-md {
+    padding-right: 20px;
+  }
+
+  .atm_p25-right-md {
+    padding-right: 25px;
+  }
+
+  .atm_p30-right-md {
+    padding-right: 30px;
+  }
+
+  .atm_p35-right-md {
+    padding-right: 35px;
+  }
+
+  .atm_p40-right-md {
+    padding-right: 40px;
+  }
+
+  .atm_p45-right-md {
+    padding-right: 45px;
+  }
+
+  .atm_p50-right-md {
+    padding-right: 50px;
+  }
+
+  .atm_p55-right-md {
+    padding-right: 55px;
+  }
+
+  .atm_p60-right-md {
+    padding-right: 60px;
+  }
+
+  .atm_p0-bottom-md {
+    padding-bottom: 0px;
+  }
+
+  .atm_p5-bottom-md {
+    padding-bottom: 5px;
+  }
+
+  .atm_p10-bottom-md {
+    padding-bottom: 10px;
+  }
+
+  .atm_p15-bottom-md {
+    padding-bottom: 15px;
+  }
+
+  .atm_p20-bottom-md {
+    padding-bottom: 20px;
+  }
+
+  .atm_p25-bottom-md {
+    padding-bottom: 25px;
+  }
+
+  .atm_p30-bottom-md {
+    padding-bottom: 30px;
+  }
+
+  .atm_p35-bottom-md {
+    padding-bottom: 35px;
+  }
+
+  .atm_p40-bottom-md {
+    padding-bottom: 40px;
+  }
+
+  .atm_p45-bottom-md {
+    padding-bottom: 45px;
+  }
+
+  .atm_p50-bottom-md {
+    padding-bottom: 50px;
+  }
+
+  .atm_p55-bottom-md {
+    padding-bottom: 55px;
+  }
+
+  .atm_p60-bottom-md {
+    padding-bottom: 60px;
+  }
+
+  .atm_p0-left-md {
+    padding-left: 0px;
+  }
+
+  .atm_p5-left-md {
+    padding-left: 5px;
+  }
+
+  .atm_p10-left-md {
+    padding-left: 10px;
+  }
+
+  .atm_p15-left-md {
+    padding-left: 15px;
+  }
+
+  .atm_p20-left-md {
+    padding-left: 20px;
+  }
+
+  .atm_p25-left-md {
+    padding-left: 25px;
+  }
+
+  .atm_p30-left-md {
+    padding-left: 30px;
+  }
+
+  .atm_p35-left-md {
+    padding-left: 35px;
+  }
+
+  .atm_p40-left-md {
+    padding-left: 40px;
+  }
+
+  .atm_p45-left-md {
+    padding-left: 45px;
+  }
+
+  .atm_p50-left-md {
+    padding-left: 50px;
+  }
+
+  .atm_p55-left-md {
+    padding-left: 55px;
+  }
+
+  .atm_p60-left-md {
+    padding-left: 60px;
+  }
+
+  .atm_b-md {
+    border: 1px solid #ddd;
+  }
+
+  .atm_b-top-md {
+    border-top: 1px solid #ddd;
+  }
+
+  .atm_b-right-md {
+    border-right: 1px solid #ddd;
+  }
+
+  .atm_b-bottom-md {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .atm_b-left-md {
+    border-left: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_m0-lg {
+    margin: 0px;
+  }
+
+  .atm_m5-lg {
+    margin: 5px;
+  }
+
+  .atm_m10-lg {
+    margin: 10px;
+  }
+
+  .atm_m15-lg {
+    margin: 15px;
+  }
+
+  .atm_m20-lg {
+    margin: 20px;
+  }
+
+  .atm_m25-lg {
+    margin: 25px;
+  }
+
+  .atm_m30-lg {
+    margin: 30px;
+  }
+
+  .atm_m35-lg {
+    margin: 35px;
+  }
+
+  .atm_m40-lg {
+    margin: 40px;
+  }
+
+  .atm_m45-lg {
+    margin: 45px;
+  }
+
+  .atm_m50-lg {
+    margin: 50px;
+  }
+
+  .atm_m55-lg {
+    margin: 55px;
+  }
+
+  .atm_m60-lg {
+    margin: 60px;
+  }
+
+  .atm_m0-top-lg {
+    margin-top: 0px;
+  }
+
+  .atm_m5-top-lg {
+    margin-top: 5px;
+  }
+
+  .atm_m10-top-lg {
+    margin-top: 10px;
+  }
+
+  .atm_m15-top-lg {
+    margin-top: 15px;
+  }
+
+  .atm_m20-top-lg {
+    margin-top: 20px;
+  }
+
+  .atm_m25-top-lg {
+    margin-top: 25px;
+  }
+
+  .atm_m30-top-lg {
+    margin-top: 30px;
+  }
+
+  .atm_m35-top-lg {
+    margin-top: 35px;
+  }
+
+  .atm_m40-top-lg {
+    margin-top: 40px;
+  }
+
+  .atm_m45-top-lg {
+    margin-top: 45px;
+  }
+
+  .atm_m50-top-lg {
+    margin-top: 50px;
+  }
+
+  .atm_m55-top-lg {
+    margin-top: 55px;
+  }
+
+  .atm_m60-top-lg {
+    margin-top: 60px;
+  }
+
+  .atm_m0-right-lg {
+    margin-right: 0px;
+  }
+
+  .atm_m5-right-lg {
+    margin-right: 5px;
+  }
+
+  .atm_m10-right-lg {
+    margin-right: 10px;
+  }
+
+  .atm_m15-right-lg {
+    margin-right: 15px;
+  }
+
+  .atm_m20-right-lg {
+    margin-right: 20px;
+  }
+
+  .atm_m25-right-lg {
+    margin-right: 25px;
+  }
+
+  .atm_m30-right-lg {
+    margin-right: 30px;
+  }
+
+  .atm_m35-right-lg {
+    margin-right: 35px;
+  }
+
+  .atm_m40-right-lg {
+    margin-right: 40px;
+  }
+
+  .atm_m45-right-lg {
+    margin-right: 45px;
+  }
+
+  .atm_m50-right-lg {
+    margin-right: 50px;
+  }
+
+  .atm_m55-right-lg {
+    margin-right: 55px;
+  }
+
+  .atm_m60-right-lg {
+    margin-right: 60px;
+  }
+
+  .atm_m0-bottom-lg {
+    margin-bottom: 0px;
+  }
+
+  .atm_m5-bottom-lg {
+    margin-bottom: 5px;
+  }
+
+  .atm_m10-bottom-lg {
+    margin-bottom: 10px;
+  }
+
+  .atm_m15-bottom-lg {
+    margin-bottom: 15px;
+  }
+
+  .atm_m20-bottom-lg {
+    margin-bottom: 20px;
+  }
+
+  .atm_m25-bottom-lg {
+    margin-bottom: 25px;
+  }
+
+  .atm_m30-bottom-lg {
+    margin-bottom: 30px;
+  }
+
+  .atm_m35-bottom-lg {
+    margin-bottom: 35px;
+  }
+
+  .atm_m40-bottom-lg {
+    margin-bottom: 40px;
+  }
+
+  .atm_m45-bottom-lg {
+    margin-bottom: 45px;
+  }
+
+  .atm_m50-bottom-lg {
+    margin-bottom: 50px;
+  }
+
+  .atm_m55-bottom-lg {
+    margin-bottom: 55px;
+  }
+
+  .atm_m60-bottom-lg {
+    margin-bottom: 60px;
+  }
+
+  .atm_m0-left-lg {
+    margin-left: 0px;
+  }
+
+  .atm_m5-left-lg {
+    margin-left: 5px;
+  }
+
+  .atm_m10-left-lg {
+    margin-left: 10px;
+  }
+
+  .atm_m15-left-lg {
+    margin-left: 15px;
+  }
+
+  .atm_m20-left-lg {
+    margin-left: 20px;
+  }
+
+  .atm_m25-left-lg {
+    margin-left: 25px;
+  }
+
+  .atm_m30-left-lg {
+    margin-left: 30px;
+  }
+
+  .atm_m35-left-lg {
+    margin-left: 35px;
+  }
+
+  .atm_m40-left-lg {
+    margin-left: 40px;
+  }
+
+  .atm_m45-left-lg {
+    margin-left: 45px;
+  }
+
+  .atm_m50-left-lg {
+    margin-left: 50px;
+  }
+
+  .atm_m55-left-lg {
+    margin-left: 55px;
+  }
+
+  .atm_m60-left-lg {
+    margin-left: 60px;
+  }
+
+  .atm_p0-lg {
+    padding: 0px;
+  }
+
+  .atm_p5-lg {
+    padding: 5px;
+  }
+
+  .atm_p10-lg {
+    padding: 10px;
+  }
+
+  .atm_p15-lg {
+    padding: 15px;
+  }
+
+  .atm_p20-lg {
+    padding: 20px;
+  }
+
+  .atm_p25-lg {
+    padding: 25px;
+  }
+
+  .atm_p30-lg {
+    padding: 30px;
+  }
+
+  .atm_p35-lg {
+    padding: 35px;
+  }
+
+  .atm_p40-lg {
+    padding: 40px;
+  }
+
+  .atm_p45-lg {
+    padding: 45px;
+  }
+
+  .atm_p50-lg {
+    padding: 50px;
+  }
+
+  .atm_p55-lg {
+    padding: 55px;
+  }
+
+  .atm_p60-lg {
+    padding: 60px;
+  }
+
+  .atm_p0-top-lg {
+    padding-top: 0px;
+  }
+
+  .atm_p5-top-lg {
+    padding-top: 5px;
+  }
+
+  .atm_p10-top-lg {
+    padding-top: 10px;
+  }
+
+  .atm_p15-top-lg {
+    padding-top: 15px;
+  }
+
+  .atm_p20-top-lg {
+    padding-top: 20px;
+  }
+
+  .atm_p25-top-lg {
+    padding-top: 25px;
+  }
+
+  .atm_p30-top-lg {
+    padding-top: 30px;
+  }
+
+  .atm_p35-top-lg {
+    padding-top: 35px;
+  }
+
+  .atm_p40-top-lg {
+    padding-top: 40px;
+  }
+
+  .atm_p45-top-lg {
+    padding-top: 45px;
+  }
+
+  .atm_p50-top-lg {
+    padding-top: 50px;
+  }
+
+  .atm_p55-top-lg {
+    padding-top: 55px;
+  }
+
+  .atm_p60-top-lg {
+    padding-top: 60px;
+  }
+
+  .atm_p0-right-lg {
+    padding-right: 0px;
+  }
+
+  .atm_p5-right-lg {
+    padding-right: 5px;
+  }
+
+  .atm_p10-right-lg {
+    padding-right: 10px;
+  }
+
+  .atm_p15-right-lg {
+    padding-right: 15px;
+  }
+
+  .atm_p20-right-lg {
+    padding-right: 20px;
+  }
+
+  .atm_p25-right-lg {
+    padding-right: 25px;
+  }
+
+  .atm_p30-right-lg {
+    padding-right: 30px;
+  }
+
+  .atm_p35-right-lg {
+    padding-right: 35px;
+  }
+
+  .atm_p40-right-lg {
+    padding-right: 40px;
+  }
+
+  .atm_p45-right-lg {
+    padding-right: 45px;
+  }
+
+  .atm_p50-right-lg {
+    padding-right: 50px;
+  }
+
+  .atm_p55-right-lg {
+    padding-right: 55px;
+  }
+
+  .atm_p60-right-lg {
+    padding-right: 60px;
+  }
+
+  .atm_p0-bottom-lg {
+    padding-bottom: 0px;
+  }
+
+  .atm_p5-bottom-lg {
+    padding-bottom: 5px;
+  }
+
+  .atm_p10-bottom-lg {
+    padding-bottom: 10px;
+  }
+
+  .atm_p15-bottom-lg {
+    padding-bottom: 15px;
+  }
+
+  .atm_p20-bottom-lg {
+    padding-bottom: 20px;
+  }
+
+  .atm_p25-bottom-lg {
+    padding-bottom: 25px;
+  }
+
+  .atm_p30-bottom-lg {
+    padding-bottom: 30px;
+  }
+
+  .atm_p35-bottom-lg {
+    padding-bottom: 35px;
+  }
+
+  .atm_p40-bottom-lg {
+    padding-bottom: 40px;
+  }
+
+  .atm_p45-bottom-lg {
+    padding-bottom: 45px;
+  }
+
+  .atm_p50-bottom-lg {
+    padding-bottom: 50px;
+  }
+
+  .atm_p55-bottom-lg {
+    padding-bottom: 55px;
+  }
+
+  .atm_p60-bottom-lg {
+    padding-bottom: 60px;
+  }
+
+  .atm_p0-left-lg {
+    padding-left: 0px;
+  }
+
+  .atm_p5-left-lg {
+    padding-left: 5px;
+  }
+
+  .atm_p10-left-lg {
+    padding-left: 10px;
+  }
+
+  .atm_p15-left-lg {
+    padding-left: 15px;
+  }
+
+  .atm_p20-left-lg {
+    padding-left: 20px;
+  }
+
+  .atm_p25-left-lg {
+    padding-left: 25px;
+  }
+
+  .atm_p30-left-lg {
+    padding-left: 30px;
+  }
+
+  .atm_p35-left-lg {
+    padding-left: 35px;
+  }
+
+  .atm_p40-left-lg {
+    padding-left: 40px;
+  }
+
+  .atm_p45-left-lg {
+    padding-left: 45px;
+  }
+
+  .atm_p50-left-lg {
+    padding-left: 50px;
+  }
+
+  .atm_p55-left-lg {
+    padding-left: 55px;
+  }
+
+  .atm_p60-left-lg {
+    padding-left: 60px;
+  }
+
+  .atm_b-lg {
+    border: 1px solid #ddd;
+  }
+
+  .atm_b-top-lg {
+    border-top: 1px solid #ddd;
+  }
+
+  .atm_b-right-lg {
+    border-right: 1px solid #ddd;
+  }
+
+  .atm_b-bottom-lg {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .atm_b-left-lg {
+    border-left: 1px solid #ddd;
+  }
+}
+/*GENERATE ROUNDED BORDER ELEMENTS*/
+.atm_nob {
+  border: none;
+}
+
+.atm_nob-top {
+  border-top: none;
+}
+
+.atm_nobright {
+  borderright: none;
+}
+
+.atm_nob-bottom {
+  border-bottom: none;
+}
+
+.atm_nob-left {
+  border-left: none;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_nob-xs {
+    border: none;
+  }
+
+  .atm_nob-top-xs {
+    border-top: none;
+  }
+
+  .atm_nobright-xs {
+    borderright: none;
+  }
+
+  .atm_nob-bottom-xs {
+    border-bottom: none;
+  }
+
+  .atm_nob-left-xs {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_nob-sm {
+    border: none;
+  }
+
+  .atm_nob-top-sm {
+    border-top: none;
+  }
+
+  .atm_nobright-sm {
+    borderright: none;
+  }
+
+  .atm_nob-bottom-sm {
+    border-bottom: none;
+  }
+
+  .atm_nob-left-sm {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_nob-md {
+    border: none;
+  }
+
+  .atm_nob-top-md {
+    border-top: none;
+  }
+
+  .atm_nobright-md {
+    borderright: none;
+  }
+
+  .atm_nob-bottom-md {
+    border-bottom: none;
+  }
+
+  .atm_nob-left-md {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_nob-lg {
+    border: none;
+  }
+
+  .atm_nob-top-lg {
+    border-top: none;
+  }
+
+  .atm_nobright-lg {
+    borderright: none;
+  }
+
+  .atm_nob-bottom-lg {
+    border-bottom: none;
+  }
+
+  .atm_nob-left-lg {
+    border-left: none;
+  }
+}
+/*GENERATE POSITIONED ELEMENTS*/
+.atm_ep-static {
+  position: static;
+}
+
+.atm_ep-relative {
+  position: relative;
+}
+
+.atm_ep-absolute {
+  position: absolute;
+}
+
+.atm_ep-fixed {
+  position: fixed;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_ep-static-xs {
+    position: static;
+  }
+
+  .atm_ep-relative-xs {
+    position: relative;
+  }
+
+  .atm_ep-absolute-xs {
+    position: absolute;
+  }
+
+  .atm_ep-fixed-xs {
+    position: fixed;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_ep-static-sm {
+    position: static;
+  }
+
+  .atm_ep-relative-sm {
+    position: relative;
+  }
+
+  .atm_ep-absolute-sm {
+    position: absolute;
+  }
+
+  .atm_ep-fixed-sm {
+    position: fixed;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_ep-static-md {
+    position: static;
+  }
+
+  .atm_ep-relative-md {
+    position: relative;
+  }
+
+  .atm_ep-absolute-md {
+    position: absolute;
+  }
+
+  .atm_ep-fixed-md {
+    position: fixed;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_ep-static-lg {
+    position: static;
+  }
+
+  .atm_ep-relative-lg {
+    position: relative;
+  }
+
+  .atm_ep-absolute-lg {
+    position: absolute;
+  }
+
+  .atm_ep-fixed-lg {
+    position: fixed;
+  }
+}
+/*GENERATE POSITIONED ELEMENTS*/
+.atm_ed-inline {
+  display: inline;
+}
+
+.atm_ed-inline-block {
+  display: inline-block;
+}
+
+.atm_ed-block {
+  display: block;
+}
+
+.atm_ed-none {
+  display: none;
+}
+
+.atm_ed-table {
+  display: table;
+}
+
+.atm_ed-table-cell {
+  display: table-cell;
+}
+
+.atm_ed-table-row {
+  display: table-row;
+}
+
+.atm_ed-flex {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_ed-inline-xs {
+    display: inline;
+  }
+
+  .atm_ed-inline-block-xs {
+    display: inline-block;
+  }
+
+  .atm_ed-block-xs {
+    display: block;
+  }
+
+  .atm_ed-none-xs {
+    display: none;
+  }
+
+  .atm_ed-table-xs {
+    display: table;
+  }
+
+  .atm_ed-table-cell-xs {
+    display: table-cell;
+  }
+
+  .atm_ed-table-row-xs {
+    display: table-row;
+  }
+
+  .atm_ed-flex-xs {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_ed-inline-sm {
+    display: inline;
+  }
+
+  .atm_ed-inline-block-sm {
+    display: inline-block;
+  }
+
+  .atm_ed-block-sm {
+    display: block;
+  }
+
+  .atm_ed-none-sm {
+    display: none;
+  }
+
+  .atm_ed-table-sm {
+    display: table;
+  }
+
+  .atm_ed-table-cell-sm {
+    display: table-cell;
+  }
+
+  .atm_ed-table-row-sm {
+    display: table-row;
+  }
+
+  .atm_ed-flex-sm {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_ed-inline-md {
+    display: inline;
+  }
+
+  .atm_ed-inline-block-md {
+    display: inline-block;
+  }
+
+  .atm_ed-block-md {
+    display: block;
+  }
+
+  .atm_ed-none-md {
+    display: none;
+  }
+
+  .atm_ed-table-md {
+    display: table;
+  }
+
+  .atm_ed-table-cell-md {
+    display: table-cell;
+  }
+
+  .atm_ed-table-row-md {
+    display: table-row;
+  }
+
+  .atm_ed-flex-md {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_ed-inline-lg {
+    display: inline;
+  }
+
+  .atm_ed-inline-block-lg {
+    display: inline-block;
+  }
+
+  .atm_ed-block-lg {
+    display: block;
+  }
+
+  .atm_ed-none-lg {
+    display: none;
+  }
+
+  .atm_ed-table-lg {
+    display: table;
+  }
+
+  .atm_ed-table-cell-lg {
+    display: table-cell;
+  }
+
+  .atm_ed-table-row-lg {
+    display: table-row;
+  }
+
+  .atm_ed-flex-lg {
+    display: flex;
+  }
+}
+/*GENERATE ROUNDED BORDER ELEMENTS*/
+.atm_br-0 {
+  border-radius: 0px;
+}
+
+.atm_br-2 {
+  border-radius: 2px;
+}
+
+.atm_br-4 {
+  border-radius: 4px;
+}
+
+.atm_br-6 {
+  border-radius: 6px;
+}
+
+.atm_br-8 {
+  border-radius: 8px;
+}
+
+.atm_br-10 {
+  border-radius: 10px;
+}
+
+.atm_br-12 {
+  border-radius: 12px;
+}
+
+.atm_br-14 {
+  border-radius: 14px;
+}
+
+.atm_br-16 {
+  border-radius: 16px;
+}
+
+.atm_br-18 {
+  border-radius: 18px;
+}
+
+.atm_br-20 {
+  border-radius: 20px;
+}
+
+.atm_br-22 {
+  border-radius: 22px;
+}
+
+.atm_br-24 {
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_br-xs-0 {
+    border-radius: 0px;
+  }
+
+  .atm_br-xs-2 {
+    border-radius: 2px;
+  }
+
+  .atm_br-xs-4 {
+    border-radius: 4px;
+  }
+
+  .atm_br-xs-6 {
+    border-radius: 6px;
+  }
+
+  .atm_br-xs-8 {
+    border-radius: 8px;
+  }
+
+  .atm_br-xs-10 {
+    border-radius: 10px;
+  }
+
+  .atm_br-xs-12 {
+    border-radius: 12px;
+  }
+
+  .atm_br-xs-14 {
+    border-radius: 14px;
+  }
+
+  .atm_br-xs-16 {
+    border-radius: 16px;
+  }
+
+  .atm_br-xs-18 {
+    border-radius: 18px;
+  }
+
+  .atm_br-xs-20 {
+    border-radius: 20px;
+  }
+
+  .atm_br-xs-22 {
+    border-radius: 22px;
+  }
+
+  .atm_br-xs-24 {
+    border-radius: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_br-sm-0 {
+    border-radius: 0px;
+  }
+
+  .atm_br-sm-2 {
+    border-radius: 2px;
+  }
+
+  .atm_br-sm-4 {
+    border-radius: 4px;
+  }
+
+  .atm_br-sm-6 {
+    border-radius: 6px;
+  }
+
+  .atm_br-sm-8 {
+    border-radius: 8px;
+  }
+
+  .atm_br-sm-10 {
+    border-radius: 10px;
+  }
+
+  .atm_br-sm-12 {
+    border-radius: 12px;
+  }
+
+  .atm_br-sm-14 {
+    border-radius: 14px;
+  }
+
+  .atm_br-sm-16 {
+    border-radius: 16px;
+  }
+
+  .atm_br-sm-18 {
+    border-radius: 18px;
+  }
+
+  .atm_br-sm-20 {
+    border-radius: 20px;
+  }
+
+  .atm_br-sm-22 {
+    border-radius: 22px;
+  }
+
+  .atm_br-sm-24 {
+    border-radius: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_br-md-0 {
+    border-radius: 0px;
+  }
+
+  .atm_br-md-2 {
+    border-radius: 2px;
+  }
+
+  .atm_br-md-4 {
+    border-radius: 4px;
+  }
+
+  .atm_br-md-6 {
+    border-radius: 6px;
+  }
+
+  .atm_br-md-8 {
+    border-radius: 8px;
+  }
+
+  .atm_br-md-10 {
+    border-radius: 10px;
+  }
+
+  .atm_br-md-12 {
+    border-radius: 12px;
+  }
+
+  .atm_br-md-14 {
+    border-radius: 14px;
+  }
+
+  .atm_br-md-16 {
+    border-radius: 16px;
+  }
+
+  .atm_br-md-18 {
+    border-radius: 18px;
+  }
+
+  .atm_br-md-20 {
+    border-radius: 20px;
+  }
+
+  .atm_br-md-22 {
+    border-radius: 22px;
+  }
+
+  .atm_br-md-24 {
+    border-radius: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_br-lg-0 {
+    border-radius: 0px;
+  }
+
+  .atm_br-lg-2 {
+    border-radius: 2px;
+  }
+
+  .atm_br-lg-4 {
+    border-radius: 4px;
+  }
+
+  .atm_br-lg-6 {
+    border-radius: 6px;
+  }
+
+  .atm_br-lg-8 {
+    border-radius: 8px;
+  }
+
+  .atm_br-lg-10 {
+    border-radius: 10px;
+  }
+
+  .atm_br-lg-12 {
+    border-radius: 12px;
+  }
+
+  .atm_br-lg-14 {
+    border-radius: 14px;
+  }
+
+  .atm_br-lg-16 {
+    border-radius: 16px;
+  }
+
+  .atm_br-lg-18 {
+    border-radius: 18px;
+  }
+
+  .atm_br-lg-20 {
+    border-radius: 20px;
+  }
+
+  .atm_br-lg-22 {
+    border-radius: 22px;
+  }
+
+  .atm_br-lg-24 {
+    border-radius: 24px;
+  }
+}
+/*GENERATE ROUNDED BORDER ELEMENTS*/
+.atm_nobr {
+  border-radius: 0px;
+}
+
+.atm_nobr-top-left {
+  border-top-left-radius: 0px;
+}
+
+.atm_nobr-top-right {
+  border-top-right-radius: 0px;
+}
+
+.atm_nobr-bottom-right {
+  border-bottom-right-radius: 0px;
+}
+
+.atm_nobr-bottom-left {
+  border-bottom-left-radius: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .atm_nobr-xs {
+    border-radius: 0px;
+  }
+
+  .atm_nobr-top-left-xs {
+    border-top-left-radius: 0px;
+  }
+
+  .atm_nobr-top-right-xs {
+    border-top-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-right-xs {
+    border-bottom-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-left-xs {
+    border-bottom-left-radius: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .atm_nobr-sm {
+    border-radius: 0px;
+  }
+
+  .atm_nobr-top-left-sm {
+    border-top-left-radius: 0px;
+  }
+
+  .atm_nobr-top-right-sm {
+    border-top-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-right-sm {
+    border-bottom-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-left-sm {
+    border-bottom-left-radius: 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .atm_nobr-md {
+    border-radius: 0px;
+  }
+
+  .atm_nobr-top-left-md {
+    border-top-left-radius: 0px;
+  }
+
+  .atm_nobr-top-right-md {
+    border-top-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-right-md {
+    border-bottom-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-left-md {
+    border-bottom-left-radius: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atm_nobr-lg {
+    border-radius: 0px;
+  }
+
+  .atm_nobr-top-left-lg {
+    border-top-left-radius: 0px;
+  }
+
+  .atm_nobr-top-right-lg {
+    border-top-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-right-lg {
+    border-bottom-right-radius: 0px;
+  }
+
+  .atm_nobr-bottom-left-lg {
+    border-bottom-left-radius: 0px;
+  }
+}

@@ -1,0 +1,16 @@
+pwd-atomic-css is a small FREE set of atomic helper styles for Twitter Bootstrap. But can be used stand alone too, of course.
+Atomic CSS is a way of writing style sheets with one property per declaration, if to put it simple. If you have coded at least one large, scalable, responsive UI you probably already know how useful this approach is:)
+
+This SCSS will generate:
+-	Set of paddings from 0 to 60. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of margins from 0 to 60. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of 1px solid borders. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of no borders. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of elements with 4 different positions. For base size and 4 breakpoints.
+-	Set of elements with display types inline, inline-block, block, none, table, table-cell, table-row, flex. For base size and 4 breakpoints.  
+-	Set of rounded corner elements, radius from 0 to 24. For all sides and for each of 4 sides. For base size and 4 breakpoints.
+-	Set of sharp corner elements, radius 0px. For each of 4 sides. For base size and 4 breakpoints.
+
+pwd-atomic-css is a FREE software, released without any warranty under GNU License: http://www.gnu.org/licenses/gpl-3.0.en.html
+
+We are not responsible for any damages, scares, oopses, so on caused by this code. You know the drill. Use it at your own discretion:). For free! No attribution required.
